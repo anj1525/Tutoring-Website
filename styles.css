@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    background-color: white;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    background-color: white;
+    padding: 25px;
+    text-align: right;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+   /* margin: 0 10px; */
+    font-weight: bold;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+/* Style for the header logo */
+#logo {
+    position: absolute;
+    top: -155px; /* Adjust the top position as needed for spacing from the top */
+    left: 0px; /* Adjust the left position as needed for spacing from the left */
+    max-height: 210px; /* Set a maximum height for the logo */
+    padding: 15px;
+}
+
+/* Style for the title image */
+#title {
+    width: 100%; /* Make the image fill the entire width of the container */
+    max-height: 350px; /* Set a maximum height to avoid stretching */
+    display: block;
+}
+
+/* Style for the title div */
+#Title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Set the text color to white and increase font size */
+#Title p {
+    color: white;
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
