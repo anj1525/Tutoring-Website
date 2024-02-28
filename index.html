@@ -1,46 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Tutoring Center - Home</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJS Tutoring - Home</title>
+
+  <!-- favicon-->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!--css-->
+  <link rel="stylesheet" href="styles.css">
+  
+
+  <!-- google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+  .popup {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background: linear-gradient(135deg, #ffffff, #a3d2ee);
+      color: #0e254e;
+      font-size: 16px;
+      z-index: 9999;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    </style>
 </head>
-<body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="schedule.html">Schedule</a>
-        <a href="information.html">Information / Pricing</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<body id="top">
+  <!-- HEADER-->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <ul class="contact-list">
+          <li class="contact-item">
+            <ion-icon name="mail-outline"></ion-icon>
+            <a href="mailto:anjanisharm@outlook.com" class="contact-link">anjanisharm@outlook.com</a>
+          </li>
+          <li class="contact-item">
+            <ion-icon name="call-outline"></ion-icon>
+            <a href="tel:+6477639245" class="contact-link">+647-763-9245</a>
+          </li>
+        </ul>
 
-    <div class="container">
-        <img id="logo" src="Images/logo.png" alt="Tutoring Center Logo" class="logo">
-        <img id = "title" src="Images/Screenshot 2024-02-27 184010.png" alt="Tutoring Center Logo" class="logo">
-        <div id="Title">
-            <p>Online Tutoring With Real Teachers</p>
-        </div>
+
+        <ul class="social-list">
+          <li>
+            <a href="https://www.linkedin.com/in/anjani-sharmaa/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/anj1525" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        
+
+
+      </div>
     </div>
+    <div class="header-bottom" data-header>
+      <div class="container">
+        <a href="#" class="logo">AJS Tutoring</a>
+        <nav class="navbar container" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+            </li>
+            <li>
+              <a href="#about" class="navbar-link" data-nav-link>Information / Pricing</a>
+            </li>
+            <li>
+              <a href="contact.php" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <!--HERO-->
+      <section class="section hero" id="home" style="background-image: url('./assets/images/hero-bg.png')"
+        aria-label="hero">
+        <div class="container">
+          <div class="hero-content">
+            <p class="section-subtitle">Welcome To AJS Tutoring</p>
+            <h1 class="h1 hero-title">Connecting With A Tutor That Is Right For You...</h1>
+            <p class="hero-text">
+            Our mission is to help students succeed! Work with experienced tutors to help secure a great grade. For any inquries send us an email...
+            </p>
+            <form action="" class="hero-form" method="POST">
+              <input type="email" name="email_address" aria-label="email" placeholder="Your Email Address..." required
+                class="email-field">
+              <button type="submit" class="btn">Get Response Back</button>
+            </form>
+          </div>
+        </div>
+      </section>
 
 
-    <section>
-        <h2>Welcome to Our Tutoring Center!</h2>
-        <p>Welcome to Anjani Sharma’s Tutoring Center, your dedicated partner <br> in academic success for students in the GTA area. We are committed <br> to empowering students of all ages by providing personalized tutoring <br> services that go beyond subject-specific support.</p>
-        <h2>Online Tutoring</h2>
-        <p>We are excited to be able to provide parents and kids throughout Ontario with online instruction. Students can use their computer or other electronic device to acquire educational resources and support through online tutoring. This basically means that the student can attend tutoring sessions in any location, including home, the library, or even while on vacation. Work together remotely with your tutor from any location! With the exception of being remote, all of our online tutoring services are of the same excellent caliber and follow the same methodology as our in-person tutoring services.</p>
-        <h2>Subject-Specific Support</h2>
-        <h3>Mathematics (Grades 1-12, Advanced Functions, Calculus, and Vectors)</h2>
-        <p>Unlock the potential of mathematical thinking with our specialized tutoring in mathematics. Our experienced tutors cater to students from grades 1 to 12, offering targeted support in foundational math concepts, problem-solving strategies, and analytical skills. For those tackling Advanced Functions, Calculus, and Vectors, our tutors provide expert guidance to navigate these advanced topics, ensuring a thorough understanding and proficiency.</p>
-        <h3>Computer Science (Java, Python, HTML) </h2>
-        <p>Step into the dynamic world of computer science with our comprehensive tutoring in Java, Python, and HTML. Whether your student is a beginner or seeking advanced programming skills, our tutors are well-versed in these languages and offer personalized guidance. From understanding programming fundamentals to mastering the intricacies of coding languages, we equip students with the knowledge and skills needed for success in computer science.</p>
+  
+
+      <!--BLOG-->
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+          <p class="section-subtitle text-center">Subjects Offered</p>
+          <h2 class="h2 section-title text-center">Our Services</h2>
+          <ul class="blog-list">
+            <li>
+              <div class="blog-card">
+                <figure class="card-banner img-holder" style="--width: 1180; --height: 800;">
+                  <img src="Images/jeshoots-com-5EKw8Z7CgE4-unsplash.jpg" width="1180" height="800" loading="lazy"
+                    alt="IMG" class="img-cover">
+                  
+                    <!--
+                    <div class="card-badge">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <time class="time" datetime="2022-03-24">24th March 2022</time>
+                  </div>
+                -->
+
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Mathematics</a>
+                  </h3>
+                  <p class="card-text">
+
+                    <h4>(Grades 1-12, Advanced Functions, Calculus, and Vectors) <br> <br></h4>
+                    Unlock the potential of mathematical thinking with our specialized tutoring in mathematics. Our experienced tutors cater to students from grades 1 to 12, offering targeted support in foundational math concepts, problem-solving strategies, and analytical skills. For those tackling Advanced Functions, Calculus, and Vectors, our tutors provide expert guidance to navigate these advanced topics, ensuring a thorough understanding and proficiency.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="blog-card">
+                <figure class="card-banner img-holder" style="--width: 1180; --height: 800;">
+                  <img src="Images/emile-perron-xrVDYZRGdw4-unsplash.jpg" width="1180" height="800" loading="lazy"
+                    alt="IMG" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Computer Science</a>
+                  </h3>
+                  <p class="card-text">
+
+                    <h4> (Java, Python, HTML) <br> <br> </h4>
+
+                    Step into the dynamic world of computer science with our comprehensive tutoring in Java, Python, and HTML. Whether your student is a beginner or seeking advanced programming skills, our tutors are well-versed in these languages and offer personalized guidance. From understanding programming fundamentals to mastering the intricacies of coding languages, we equip students with the knowledge and skills needed for success in computer science.
+                  </p>
+                </div>
+              </div>
+            </li>
             
-            
-    </section>
+            <li>
+              <div class="blog-card">
+                <figure class="card-banner img-holder" style="--width: 1180; --height: 800;">
+                  <img src="Images/gabriella-clare-marino-Hx8HaI4ERkA-unsplash.jpg" width="1180" height="800" loading="lazy"
+                    alt="IMG" class="img-cover">
+  
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Introduction to Philosophy</a>
+                  </h3>
+                  <p class="card-text">
+
+                    <h4> (University Prep / High School Philosophy) <br> <br> </h4>
+                    Embark on a journey of intellectual exploration with our specialized tutoring in Introduction to Philosophy. Our philosophy tutors guide students through the fundamental concepts and theories that shape the world of philosophical inquiry. Whether delving into the works of ancient philosophers or navigating contemporary debates, our tutors offer comprehensive support to enhance understanding and critical thinking skills.
+                  </p>
+                </div>
+              </div>
+            </li> 
+          </ul>
+        </div>
+      </section>
+    </article>
+  </main>
+  
+
+
+  <!--FOOTER-->
+  <footer class="footer">
+    <div class="footer-top section">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="#" class="logo">AJS Tutoring</a>
+          <p class="footer-text">
+            Our mission is to help students succeed! Work with experienced tutors to help secure a great grade. For any inquries send us an email...
+
+          </p>
+          <div class="schedule">
+            <div class="schedule-icon">
+              <ion-icon name="time-outline"></ion-icon>
+            </div>
+            <span class="span">
+              24 X 7:<br>
+              365 Days
+            </span>
+          </div>
+        </div>
+        <ul class="footer-list">
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <a href="https://goo.gl/maps/BYA5MxQUg5B8ZFLcA">
+            <address class="item-text">
+              Ontario, based in Markham 
+            </address>
+          </a>
+          </li>
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+            <a href="tel:+6477639245" class="footer-link">+647-763-9245</a>
+          </li>
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <a href="mailto:anjanisharm@outlook.com" class="footer-link">anjanisharm@outlook.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2024 All Rights Reserved by Anjani Sharma
+        </p>
+        <ul class="social-list">
+          <li>
+            <a href="https://www.linkedin.com/in/anjani-sharmaa/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/anj1525" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <?php
+  // Check if the form is submitted
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+      // Validate the email address
+      if (isset($_POST["email_address"]) && filter_var($_POST["email_address"], FILTER_VALIDATE_EMAIL)) {
+          // Sanitize the email address to prevent SQL injection
+          $email = htmlspecialchars($_POST["email_address"]);
+          // Database connection details
+          $servername = "localhost";
+          $username = "root";
+          $password = "";
+          $dbname = "redstream_db";
+          // Create a connection
+          $conn = new mysqli($servername, $username, $password, $dbname);
+          // Check connection
+          if ($conn->connect_error) {
+              die("Connection failed: " . $conn->connect_error);
+          }
+          // Prepare and execute the SQL query to insert the email into the database
+          $stmt = $conn->prepare("INSERT INTO response_back (email) VALUES (?)");
+          $stmt->bind_param("s", $email);
+          $stmt->execute();
+          // Check if the email is inserted successfully
+          if ($stmt->affected_rows > 0) {
+              // Email added successfully, show the popup message
+              echo '<script>alert("Email added successfully!");</script>';
+          } else {
+              // Unable to add email, show the popup message
+              echo '<script>alert("Error: Unable to add email. Please try again later.");</script>';
+          }
+          // Close the statement and connection
+          $stmt->close();
+          $conn->close();
+      } else {
+          // Invalid email address, show the popup message
+          echo '<script>alert("Error: Invalid email address. Please enter a valid email.");</script>';
+      }
+  }
+  ?>
+  
+
+  <!--BACK TO TOP-->
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!--custom js link-->
+  <script src="./assets/js/script.js" defer></script>
+  <!--ionicon link-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
-
-<footer>
-    <p>&copy; 2024 Anjani Sharma. All rights reserved.</p>
-</footer>
-
 </html>
