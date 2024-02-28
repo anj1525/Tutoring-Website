@@ -1,31 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Tutoring Center - Contact</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJS Tutoring - Information</title>
+
+  <!-- favicon-->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!--css-->
+  <link rel="stylesheet" href="styles.css">
+  
+
+  <!-- google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+  .popup {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background: linear-gradient(135deg, #ffffff, #a3d2ee);
+      color: #0e254e;
+      font-size: 16px;
+      z-index: 9999;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Tutoring Center</h1>
-    </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="schedule.html">Schedule</a>
-        <a href="information.html">Information / Pricing</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<body id="top">
+  <!-- HEADER-->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <ul class="contact-list">
+          <li class="contact-item">
+            <ion-icon name="mail-outline"></ion-icon>
+            <a href="mailto:anjanisharm@outlook.com" class="contact-link">anjanisharm@outlook.com</a>
+          </li>
+          <li class="contact-item">
+            <ion-icon name="call-outline"></ion-icon>
+            <a href="tel:+6477639245" class="contact-link">+647-763-9245</a>
+          </li>
+        </ul>
 
-    <section>
-        <h2>Contact Us</h2>
-        <p>Have questions or want to get in touch? Reach out to us!</p>
-        <!-- Add contact form or details here -->
+
+        <ul class="social-list">
+          <li>
+            <a href="https://www.linkedin.com/in/anjani-sharmaa/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/anj1525" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="header-bottom" data-header>
+      <div class="container">
+        <a href="#" class="logo">AJS Tutoring</a>
+        <nav class="navbar container" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+            </li>
+            <li>
+              <a href="information.html" class="navbar-link" data-nav-link>Information / Pricing</a>
+            </li>
+            <li>
+              <a href="contact.html" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <article>    
+    <!--BLOG-->
+    <section class="section blog" id="blog" aria-label="blog">
+      <div class="container">
+        <h2 class="h2 section-title text-center">Prices</h2>
+        <ul class="blog-list">
+          <li>
+            <div class="blog-card">
+              <figure class="card-banner img-holder" style="--width: 1180; --height: 800;">
+                <img src="Images/jeshoots-com-5EKw8Z7CgE4-unsplash.jpg" width="1180" height="800" loading="lazy"
+                  alt="IMG" class="img-cover">
+              </figure>
+              <div class="card-content">
+                <h3 class="h3">
+                  <a href="#" class="card-title">Individual Online Lessons</a>
+                </h3>
+                <p class="card-text">
+                  <h4>$35 CAD per hour <br> <br></h4>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="blog-card">
+              <figure class="card-banner img-holder" style="--width: 1180; --height: 800;">
+                <img src="Images/emile-perron-xrVDYZRGdw4-unsplash.jpg" width="1180" height="800" loading="lazy"
+                  alt="IMG" class="img-cover">
+              </figure>
+              <div class="card-content">
+                <h3 class="h3">
+                  <a href="#" class="card-title">Individual In-Person Lessons</a>
+                </h3>
+                <p class="card-text">
+
+                  <h4>$45 CAD per hour <br> <br> </h4>
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
+  </article>
+  
+  <main>
+      <section class="section subjects" id="subjects" aria-label="subjects">
+        <div class="container">
+            <p class="section-subtitle text-center">Personalized Tutoring for Academic Success</p>
+            <h2 class="h2 section-title text-center">Subject Specific Support <br> </h2>
+            
+            <style>
+                .subjects-list {
+                    list-style: none;
+                    padding: 20px 0; /* Add padding to the top (20px in this example) to move the list down */
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    max-width: 600px; /* Adjust the max-width based on your design */
+                    margin: 0 auto;
+                }
+            
+                .subjects-list li {
+                    margin-bottom: 10px;
+                    flex: 0 0 calc(33.33% - 10px); /* Adjust the width and margin based on your design */
+                    display: flex;
+                    align-items: center;
+                }
+            
+                .subjects-list li::before {
+                    content: '\2713'; /* Unicode checkmark character */
+                    margin-right: 5px; /* Adjust the spacing between checkmark and text */
+                    font-size: 18px; /* Adjust the font size based on your design */
+                    color: #007BFF; /* Adjust the color based on your design */
+                }
+            </style>
+            
+            <ul class="subjects-list">
+                <li>Reading Skills</li>
+                <li>Writing Skills</li>
+                <li>Math</li>
+                <li>Calculus</li>
+                <li>Advanced Functions</li>
+                <li>Science</li>
+                <li>Biology</li>
+                <li>Chemistry</li>
+                <li>Physics</li>
+                <li>English</li>
+                <li>Essay Writing Support</li>
+            </ul>
+        </div>
+    </section>
+  </main>
+  
 
-    <footer>
-        <p>&copy; 2024 Anjani Sharma. All rights reserved.</p>
-    </footer>
+
+  <!--FOOTER-->
+  <footer class="footer">
+    <div class="footer-top section">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="#" class="logo">AJS Tutoring</a>
+          <p class="footer-text">
+            Our mission is to help students succeed! Work with experienced tutors to help secure a great grade. For any inquries send us an email...
+
+          </p>
+          <div class="schedule">
+            <div class="schedule-icon">
+              <ion-icon name="time-outline"></ion-icon>
+            </div>
+            <span class="span">
+              24 X 7:<br>
+              365 Days
+            </span>
+          </div>
+        </div>
+        <ul class="footer-list">
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <a href="https://goo.gl/maps/BYA5MxQUg5B8ZFLcA">
+            <address class="item-text">
+              Ontario, based in Markham 
+            </address>
+          </a>
+          </li>
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+            <a href="tel:+6477639245" class="footer-link">+647-763-9245</a>
+          </li>
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <a href="mailto:anjanisharm@outlook.com" class="footer-link">anjanisharm@outlook.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2024 All Rights Reserved by Anjani Sharma
+        </p>
+        <ul class="social-list">
+          <li>
+            <a href="https://www.linkedin.com/in/anjani-sharmaa/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/anj1525" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--BACK TO TOP-->
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!--custom js link-->
+  <script src="./assets/js/script.js" defer></script>
+  <!--ionicon link-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
