@@ -124,7 +124,10 @@
   
   
   
-  
+  #subtitle-for-our-services{
+    text-align: center;
+    padding: 12px;
+  }
   
   /*REUSED STYLE*/
   
@@ -560,7 +563,6 @@
   .blog-card .card-link:is(:hover, :focus) { color: var(--oxford-blue-1); }
   
   .blog-card .card-link:is(:hover, :focus)::after { background-color: var(--oxford-blue-1); }
-  
   
   
   
